@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Em qual país você nasceu?</h1>
-    Escreva aqui: <input type="text" name="pais" id="pais">
+    Responda aqui: <input type="text" name="pais" id="pais">
     <input type="button" value="Vefificar" onclick="verificar()">
     <div id="res">
 
@@ -18,7 +18,7 @@
             var pais = window.document.querySelector('input#pais')
             var res = window.document.querySelector('div#res')
 
-            res.innerHTML = `<p>País onde você nasceu:${pais.value}</p>`
+            res.innerHTML = `<p>País onde você nasceu: ${pais.value}</p>`
             if (pais.value != 'Brasil') {
                 res.innerHTML += `Você é estrangeiro!`
             } else {
