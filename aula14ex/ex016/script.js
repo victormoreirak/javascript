@@ -14,11 +14,11 @@ function contar() {
         let p = Number(passo.value)
         if (p <= 0) {
             window.alert('Passo inválido! Considerando PASSO 1')
-            P = 1
+            p = 1
         }
         if (i < f) {
             // Contagem crescente
-               for(let c = i; c <= f; c += p) {
+            for(let c = i; c <= f; c += p) {
         }
         res.innerHTML += `\u{1F3C1}`
         } else {
